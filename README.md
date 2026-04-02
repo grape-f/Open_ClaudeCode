@@ -429,8 +429,14 @@ A: 创建 `settings.json` 文件，内容如下：
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://你的代理地址",
-    "ANTHROPIC_AUTH_TOKEN": "sk-你的密钥"
+    "ANTHROPIC_BASE_URL": "模型api地址",
+    "ANTHROPIC_AUTH_TOKEN": "api密钥",
+    "ANTHROPIC_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "模型名字",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "6000"
   }
 }
 ```
