@@ -218,7 +218,7 @@ node package/cli.js -r <session-id>
 
 如果你使用第三方 API 代理服务或有自定义端点，可以这样配置：
 
-#### 方式一：通过 Settings 文件（推荐，持久化）
+#### 方式一：通过 修改Settings 文件（推荐，持久化）
 
 1. 创建配置文件：
 
@@ -226,8 +226,14 @@ node package/cli.js -r <session-id>
 // settings.json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://你的代理地址",
-    "ANTHROPIC_AUTH_TOKEN": "sk-你的API密钥"
+    "ANTHROPIC_BASE_URL": "模型api地址",
+    "ANTHROPIC_AUTH_TOKEN": "api密钥",
+    "ANTHROPIC_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "模型名字",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "6000"
   }
 }
 ```
@@ -263,8 +269,14 @@ Claude Code 会自动读取 `~/.claude/settings.json`：
 // ~/.claude/settings.json  (macOS/Linux)
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://你的代理地址",
-    "ANTHROPIC_AUTH_TOKEN": "sk-你的API密钥"
+    "ANTHROPIC_BASE_URL": "模型api地址",
+    "ANTHROPIC_AUTH_TOKEN": "api密钥",
+    "ANTHROPIC_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "模型名字",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "6000"
   }
 }
 ```
