@@ -95,8 +95,8 @@ Open-ClaudeCode/
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/LING71671/Open-ClaudeCode.git
-cd Open-ClaudeCode
+git clone https://github.com/grape-f/Open_ClaudeCode.git
+cd Open_ClaudeCode
 
 # 2. 验证环境
 node --version          # 需要 >= 18.0.0
@@ -119,8 +119,14 @@ node package/cli.js
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://你的代理地址",
-    "ANTHROPIC_AUTH_TOKEN": "sk-你的密钥"
+    "ANTHROPIC_BASE_URL": "模型api地址",
+    "ANTHROPIC_AUTH_TOKEN": "api密钥",
+    "ANTHROPIC_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "模型名字",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "模型名字",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "6000"
   }
 }
 ```
@@ -250,6 +256,7 @@ node package/cli.js --settings settings.json
 # PowerShell
 $env:ANTHROPIC_BASE_URL = "https://你的代理地址"
 $env:ANTHROPIC_AUTH_TOKEN = "sk-你的API密钥"
+$env:ANTHROPIC_MODEL: "模型名字"
 node package/cli.js
 ```
 
