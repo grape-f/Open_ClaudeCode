@@ -1,8 +1,8 @@
-# Open-ClaudeCode
+# Open_ClaudeCode
 
 > 完整开源的 Claude Code 项目 - 基于 Anthropic 官方源码重建
 
-🌐 **Languages**: [中文](README.md) | [English](README.en.md)
+🌐 **Languages**: [中文](README.md)
 
 ---
 
