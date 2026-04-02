@@ -264,6 +264,7 @@ node package/cli.js
 # CMD
 set ANTHROPIC_BASE_URL=https://你的代理地址
 set ANTHROPIC_AUTH_TOKEN=sk-你的API密钥
+set ANTHROPIC_MODEL: 模型名字
 node package/cli.js
 ```
 
@@ -272,7 +273,6 @@ node package/cli.js
 Claude Code 会自动读取 `~/.claude/settings.json`：
 
 ```json
-// C:\Users\你的用户名\.claude\settings.json  (Windows)
 // ~/.claude/settings.json  (macOS/Linux)
 {
   "env": {
