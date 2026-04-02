@@ -115,7 +115,7 @@ node package/cli.js
 适合中国大陆用户，无需科学上网：
 
 1. 获取第三方代理的 API 地址和密钥
-2. 创建 `settings.json`：
+2. 创建 修改 `settings.json`：
 ```json
 {
   "env": {
@@ -226,7 +226,7 @@ node package/cli.js -r <session-id>
 
 #### 方式一：通过 修改Settings 文件（推荐，持久化）
 
-1. 创建配置文件：
+1. 创建修改配置文件：
 
 ```json
 // settings.json
@@ -417,7 +417,7 @@ A: 首次运行需要登录。运行后会自动打开浏览器，用你的 Clau
 ### Q: 运行后卡住了？
 A: 检查网络连接。如果在中国大陆，可能需要代理：
 ```bash
-$env:HTTPS_PROXY="http://127.0.0.1:7890"
+$env:HTTPS_PROXY="http://127.0.0.1:代理的端口"
 node package/cli.js
 ```
 
@@ -425,7 +425,7 @@ node package/cli.js
 A: 在交互模式下输入 `/cost` 或 `/stats` 查看。
 
 ### Q: 如何配置第三方代理或自定义 API？
-A: 创建 `settings.json` 文件，内容如下：
+A: 创建 修改 `settings.json` 文件，内容如下：
 ```json
 {
   "env": {
